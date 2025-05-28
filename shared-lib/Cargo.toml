@@ -1,0 +1,15 @@
+[package]
+name = "shared-lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+blake3 = { workspace = true }
+anyhow = { workspace = true }
+openssl = { workspace = true }
+hex = { workspace = true }
+rayon = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+walkdir = { workspace = true } 

@@ -1,0 +1,17 @@
+[package]
+name = "gen-hash"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared-lib = { path = "../shared-lib" }
+blake3 = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+tokio = { workspace = true }
+openssl = { workspace = true }
+hex = { workspace = true }
+rayon = { workspace = true }
+walkdir = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

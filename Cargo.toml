@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "gen-hash",
+    "check-hash",
+    "shared-lib",
+]
+
+[workspace.dependencies]
+# 核心依赖
+anyhow = "1.0"
+blake3 = { version = "1.8", features = ["rayon"] }
+openssl = { version = "0.10.72", features = ["vendored"] }
+hex = "0.4"
+rayon = "1.7"
+walkdir = "2.3"
+
+# 序列化
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# 命令行工具
+clap = { version = "4.0", features = ["derive"] }
+
+# 异步运行时
+tokio = { version = "1.0", features = ["full"] }
+
+# 哈希算法
+sha2 = "0.10"
